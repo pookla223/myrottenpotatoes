@@ -1,0 +1,13 @@
+%h1 All Movies
+ 
+%table#movies
+  %thead
+    %tr
+      %th Movie Title
+      %th Rating
+      %th Release Date
+      %th More Info
+  %tbody
+    = render :partial=>'movie'
+
+= link_to 'Add new movie', new_movie_path
